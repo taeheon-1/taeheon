@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="datatablefont" lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> datable page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link rel="stylesheet" href="datatablecss.css">
+  <scrtpt type="text/javascript" src="datatablejs.js"></scrtpt>
+  <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+
+  <style>
+  </style>
+</head>
+
+<body class="datatable_body">
+
+  <input type="checkbox" id="sidebar-toggle" />
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3 class="brand">
+        <span clas="ti-unlink"></span>
+        <span>IM 캐피탈</span>
+      </h3>
+      <label for="sidebar-toggle" class="ti-menu-alt"></label>
+    </div>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="html1.html">
+            <span class="ti-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-face-smile"></span>
+            <span>Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="datatable.html">
+            <span class="ti-agenda"></span>
+            <span>Tables</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-folder"></span>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-time"></span>
+            <span>Excelsheet</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-book"></span>
+            <span>Contacts</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-settings"></span>
+            <span>Account</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <header>
+      <div class="search-wrapper">
+        <span class="ti-search"></span>
+        <input  type="search" placeholder="Search">
+      </div>
+
+      <div class="social-icons">
+        <span class="ti-bell"></span>
+        <span class="ti-comment"></span>
+        <div>
+        </div>
+      </div>
+    </header>
+
+      <body>
+
+  <main class="mainclass">
+    <div class="container">
+			<div class="headTab">
+	       <div class="frame">
+           <ul>
+             <button class="tablebutton"><li class="Member_management"><a href="datatable.html">회원관리</a></li></button>
+             <button class="tablebutton"><li class="Vehicle_information"><a href="Vehicleinformation.html">차량정보</a></li></button>
+             <button class="tablebutton"><li class="Consultation_history"><a href="Consultationhistory.html">상담내역</a></li></button>
+             <button class="tablebutton"><li class="Identity_management"><a href="Identitymanagement.html">본인인증관리</a></li></button>
+             <button class="tablebutton"><li class="Popular_vehicles"><a href="Popularvehicles.html">인기차량</a></li></button>
+           </ul>
+	       </div>
+</div>
+
+
+
+<div class="listBox">
+	<div class="frame">
+		<div class="index">
+			<span>등록 코드</span>
+			<span>이름</span>
+			<span>휴대폰</span>
+			<span>등급</span>
+			<span>소속</span>
+      <span>패스워드</span>
+		</div>
+		<ul class="list" id="memberList">
+		            <li><a>
+            	<span class="person_code">A00001</span>
+            	<span class="person_name">김세현</span>
+            	<span class="person_phone">010-4154-5154</span>
+            	<span class="person_grade">1</span>
+            	<span class="person_company">유니팅</span>
+              <span class="person_pw">A00001 </span>
+              <div class="label_content">
+                <input type="checkbox" id="info">
+                  <label for="info">
+                    <i class="far fa-edit"></i>
+                  </label>
+                  <div class="content">
+                    <div class="content_header">
+                      <h2 class="content_header_title">회원관리 수정하기</h2>
+                    </div>
+                    <div class="content_body">
+                      <div class="form_group">
+                        <span>등록 코드</span>
+                        </div>
+                        <div class="input_text">
+                        <input type="text1" class="code_person" required></input>
+                        </div>
+                        <div class="form_group">
+                          <span>이름</span>
+                          </div>
+                          <div class="input_text">
+                          <input type="text1" class="code_person" required></input>
+                          </div>
+                          <div class="form_group">
+                            <span>휴대폰</span>
+                            </div>
+                            <div class="input_text">
+                            <input type="text1" class="code_person" required></input>
+                            </div>
+                            <div class="form_group">
+                              <span>등급</span>
+                              </div>
+                              <div class="input_text">
+                              <input type="text1" class="code_person" required></input>
+                              </div>
+                              <div class="form_group">
+                                <span>소속</span>
+                                </div>
+                                <div class="input_text">
+                                <input type="text1" class="code_person" required></input>
+                                </div>
+                                <div class="form_group">
+                                  <span>패스워드</span>
+                                  </div>
+                                  <div class="input_text">
+                                  <input type="text1" class="code_person" required></input>
+                                  </div>
+
+                    <form>
+                    <div class="body_footer">
+                    <label class="update_button" for="info">
+                      수정완료
+                    </label>
+                  </div>
+                    </div>
+                    </form>
+                  </div>
+                </input>
+                <i class="far fa-trash-alt"></i>
+              </div>
+            </a></li>
+                    <li><a href="/admin/member/10012">
+            	<span class="person_id">A00002</span>
+            	<span class="person_name">IM 캐피탈</span>
+            	<span class="person_phone">010-1234-5678</span>
+            	<span class="person_grade">2</span>
+            	<span class="person_company">IM 캐피탈</span>
+              <span class="person_pw">A00002</span>
+            </a></li>
+            <li><a href="/admin/member/10013">
+      <span class="person_id">A00003</span>
+      <span class="person_name">IM 캐피탈</span>
+      <span class="person_phone">010-5678-1234</span>
+      <span class="person_grade">3</span>
+      <span class="person_company">IM 캐피탈</span>
+      <span class="person_pw">A00003</span>
+    </a></li>
+        		</ul>
+
+			</div>
+</div>
+<div class="headBox">
+	<div class="frame">
+    	<div class="search2" id="memberSearch">
+    		<span class="select">
+    			<select name="grade">
+    				<option value="">등급</option>
+    				    				<option value="S">소속</option>
+    				    				<option value="M">이름</option>
+    				    			</select>
+    		</span>
+    		<input id="searchkeyword" type="text" name="keyword" value="" placeholder="검색어">
+    		<button class="searchbutton">검색</button>
+    		<a href="addpersonalinfo.html">추가하기</a>
+
+        </div>
+    </div>
+</div>
+<!-- <script>
+$(function () {
+	 // 고객 검색/저장
+	$(document).on("click", "#memberSearch button", function () {
+		var keyword = $.trim($("#memberSearch input[name='keyword']").val());
+		if(keyword.length>0 && keyword.length<2){
+    		alert("두 글자 이상 입력해 주세요.");
+    	}else{
+			var link = "";
+			if($("#memberSearch select[name='grade']").val()){
+				if(link) link +="&";
+				link +="grade="+$("#memberSearch select[name='grade']").val();
+			}
+			if($("#memberSearch select[name='division']").val()){
+				if(link) link +="&";
+				link +="division="+$("#memberSearch select[name='division']").val();
+			}
+			if($("#memberSearch select[name='state']").val()!=""){
+				if(link) link +="&";
+				link +="state="+$("#memberSearch select[name='state']").val();
+			}
+    		if(keyword){
+        		if(link) link +="&";
+        		link +="search="+$("#memberSearch select[name='search']").val()+"&keyword="+encodeURI(keyword);
+    		}
+    		if(link) window.location.href = "/admin/member/list?"+link;
+    		else window.location.href = "/admin/member/list";
+    	}
+    });
+	// 회원 등록 초대하기
+	$(document).on("click", "#memberInvite button", function () {
+		if($('#memberList [name="idx[]"]:checked').length==0){
+			alert("초대할 회원을 선택해 주세요.");
+			return false;
+		}else{
+			var idx = "";
+			$('#memberList [name="idx[]"]:checked').each(function (){
+				if(idx) idx += ",";
+				idx += $(this).val();
+			});
+			$("#memberInvite input[name='idx']").val(idx);
+			if(!confirm($('#memberList [name="idx[]"]:checked').length+"명을 초대하시겠습니까?")){
+				return false;
+			}
+		}
+    });
+});
+</script> -->
+
+
+	</div>
+    </main>
+    <script src="datatablejs.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

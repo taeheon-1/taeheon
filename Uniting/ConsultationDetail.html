@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="datatablefont" lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title> datable page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link rel="stylesheet" href="datatablecss.css">
+  <script type="text/javascript" src="C:\Users\dlxog\OneDrive\바탕 화면\Uniting\kapan js\calculator.js"></script>
+  <script type="text/javascript" src="C:\Users\dlxog\OneDrive\바탕 화면\Uniting\kapan js\calculatorC.js"></script>
+  <script type="text/javascript" src="C:\Users\dlxog\OneDrive\바탕 화면\Uniting\kapan js\estimate.js"></script>
+  <scrtpt type="text/javascript" src="C:\Users\dlxog\OneDrive\바탕 화면\Uniting\datatablejs.js"></scrtpt>
+
+</head>
+
+<body>
+
+  <input type="checkbox" id="sidebar-toggle" />
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3 class="brand">
+        <span clas="ti-unlink"></span>
+        <span>IM 캐피탈</span>
+      </h3>
+      <label for="sidebar-toggle" class="ti-menu-alt"></label>
+    </div>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="html1.html">
+            <span class="ti-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-face-smile"></span>
+            <span>Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="datatable.html">
+            <span class="ti-agenda"></span>
+            <span>Tables</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-folder"></span>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-time"></span>
+            <span>Excelsheet</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-book"></span>
+            <span>Contacts</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-settings"></span>
+            <span>Account</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="main-content">
+
+    <header>
+      <div class="search-wrapper">
+        <span class="ti-search"></span>
+        <input type="search" placeholder="Search">
+      </div>
+
+      <div class="social-icons">
+        <span class="ti-bell"></span>
+        <span class="ti-comment"></span>
+        <div>
+        </div>
+      </div>
+    </header>
+  <main>
+    <div class="mainclass">
+
+    <div class="editBox">
+    	<div class="frame1">
+    		<form id="formMember" action="/admin/action/member" method="POST">
+    		<dl>
+    			<dt>휴대폰 번호</dt>
+    			<dd><span class="phonenumber_consultation">010-1234-5678</span></dd>
+    						<dt>날짜</dt>
+            	<dd>
+                <span class="date_consultation">2020년 12월 10일</span>
+            	</dd>
+            				<dt>차종</dt>
+    			<dd><span class="vehicleinformation_consultation">아반떼</span></dd>
+    			<dt>할부 개월</dt>
+    			<dd>
+    				<span class="date_consultation">48개</span>
+    			<dt>월 대여료</dt>
+          <dd>
+            <span class="RENTAL_FEE_MONTH">600,000원</span></dd>
+          <dt>출고지</dt><dd>
+          <span class="VEHICLE_PLACE">서울</span></dd>
+
+    		</dl>
+      </div>
+    		<div class="Consul_detail">
+    			<button class="Consul_detail_button"><a href="Consultationhistory.html">확인</a></button>
+    			<input type="hidden" name="act" value="add">
+    			<input type="hidden" name="idx" value="">
+    			<input type="hidden" name="agency" value="">
+    		</form>
+    	</div>
+    </div>
+
+    <!-- <script>
+        $(document).on("click", "#formMember button#submit", function () {
+        	if(!$('#formMember [name="id"]').val()){
+        		alert("등록 ID를 입력해 주세요.");
+        		$('#formMember [name="id"]').focus();
+        		return false;
+        	}else if($('#formMember [name="grade"]:checked').length==0){
+        		alert("등급을 선택해 주세요.");
+        		return false;
+        	}else if(!$('#formMember [name="name"]').val()){
+        		alert("이름을 입력해 주세요.");
+        		$('#formMember [name="name"]').focus();
+        		return false;
+        	}else if($('#formMember input[name="phone2"]').val().length<3){
+        		alert("휴대전화번호를 입력해주세요.");
+        		$('#formMember input[name="phone2"]').focus();
+        		return false;
+        	}else if($('#formMember input[name="phone3"]').val().length<4){
+        		alert("휴대전화번호를 입력해주세요.");
+        		$('#formMember input[name="phone3"]').focus();
+        		return false;
+        	}
+        });
+        $(document).on("click", "#formMember button#invite", function () {
+            if(!confirm("다시 초대를 하시겠습니까?")){
+                return false;
+            }else{
+                $("#formMember").attr("action","/admin/action/invite");
+            }
+        });
+        function nextFocus(arg,len,nextname) {
+    		if (arg.value.length==len) {
+    			$("input[type='text'][name='"+nextname+"']").focus() ;
+    			return;
+    		}
+    	}
+
+    	$(document).on("click", "#formMember button#agencyAdd", function () {
+    		openAgencySearch('','admin');
+    		return false;
+    	});
+        $(document).on("click", "#formMember button.agencyDel", function () {
+    		if(confirm("소속사를 삭제하시겠습니까?")){
+    			$("#formMember input[name='agency']").val($(this).attr("agency"));
+    			$("#formMember input[name='act']").val("agencyDel");
+    		}else{
+    			return false;
+    		}
+    	});
+    </script> -->
+
+
+    	</div>
+    	<footer>
+    	<div class="footer">
+    	</div>
+    	</footer>
+    </div>
+    </main>
+  </div>
+</body>
+</html>

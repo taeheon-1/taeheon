@@ -1,0 +1,26 @@
+<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $("div[class='ac1']").click(function(){
+   $("div[id='view1']").fadeIn(0);
+   $("div[id='view2']").fadeOut(0);
+ });
+ $("div[class='ac2']").click(function(){
+   $("div[id='view1']").fadeOut(0);
+   $("div[id='view2']").fadeIn(0);
+
+    });
+});
+</script>
+
+
+
+
+
+
+
+<div class="ac1" style="cursor:pointer;">버튼1</div>
+<div class="ac2" style="cursor:pointer;">버튼2</div>
+<div id="view1" style="display:none;">내용1</div>
+<div id="view2" style="display:none;">내용2</div>

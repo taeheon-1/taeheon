@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="datatablefont" lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+  <title> datable page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link rel="stylesheet" href="datatablecss.css">
+  <script type="text/javascript" src="C:\Users\dlxog\OneDrive\바탕 화면\Uniting\kapan js\calculator.js"></script>
+  <script type="text/javascript" src="C:\Users\dlxog\OneDrive\바탕 화면\Uniting\kapan js\calculatorC.js"></script>
+  <script type="text/javascript" src="C:\Users\dlxog\OneDrive\바탕 화면\Uniting\kapan js\estimate.js"></script>
+  <scrtpt type="text/javascript" src="datatablejs.js"></scrtpt>
+
+</head>
+
+<body>
+
+  <input type="checkbox" id="sidebar-toggle" />
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h3 class="brand">
+        <span clas="ti-unlink"></span>
+        <span>IM 캐피탈</span>
+      </h3>
+      <label for="sidebar-toggle" class="ti-menu-alt"></label>
+    </div>
+
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="html1.html">
+            <span class="ti-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-face-smile"></span>
+            <span>Team</span>
+          </a>
+        </li>
+        <li>
+          <a href="datatable.html">
+            <span class="ti-agenda"></span>
+            <span>Tables</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-folder"></span>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-time"></span>
+            <span>Excelsheet</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-book"></span>
+            <span>Contacts</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <span class="ti-settings"></span>
+            <span>Account</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <header>
+      <div class="search-wrapper">
+        <span class="ti-search"></span>
+        <input type="search" placeholder="Search">
+      </div>
+
+      <div class="social-icons">
+        <span class="ti-bell"></span>
+        <span class="ti-comment"></span>
+        <div>
+        </div>
+      </div>
+    </header>
+
+      <body>
+
+  <main class="mainclass">
+    <div class="container">
+			<div class="headTab">
+	       <div class="frame">
+           <ul>
+             <button class="tablebutton"><li class="Member_management"><a href="datatable.html">회원관리</a></li></button>
+             <button class="tablebutton"><li class="Vehicle_information"><a href="Vehicleinformation.html">차량정보</a></li></button>
+             <button class="tablebutton"><li class="Consultation_history"><a href="Consultationhistory.html">상담내역</a></li></button>
+             <button class="tablebutton"><li class="Identity_management"><a href="Identitymanagement.html">본인인증관리</a></li></button>
+             <button class="tablebutton"><li class="Popular_vehicles"><a href="Popularvehicles.html">인기차량</a></li></button>
+           </ul>
+	       </div>
+</div>
+
+
+
+<div class="listBox">
+	<div class="frame">
+		<div class="index">
+			<span>휴대폰 번호</span>
+			<span>날짜</span>
+		</div>
+		<ul class="list" id="memberList">
+		            <li><a href="/admin/member/10011">
+            	<span class="id">010-1234-5678</span>
+            	<span class="name">2020년 12월 8일</span>
+            </a></li>
+        		</ul>
+
+			</div>
+</div>
+<div class="headBox">
+	<div class="frame">
+    	<div class="search2" id="memberSearch">
+    		<span class="select">
+    			<select name="state">
+    				<option value="">번호</option>
+    				    				<option value="0">##</option>
+    				    				<option value="1">##</option>
+    				    				<option value="2">##</option>
+    				    				<option value="3">##</option>
+    				    				<option value="4">##</option>
+    				    			</select>
+    			<select name="search">
+    				<option value="name" selected="">날짜</option>
+    				<option value="id">##</option>
+                	<option value="phone">##</option>
+    			</select>
+    		</span>
+    		<input id="searchkeyword" type="text" name="keyword" value="" placeholder="검색어">
+    		<button class="searchbutton">검색</button>
+        </div>
+    </div>
+</div>
+</div>
+  </main>
+  <script src="datatablejs.js"></script>
+</body>
+</html>
